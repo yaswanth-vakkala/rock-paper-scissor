@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="flex-container1">
+      <div>
+        <h2>Player</h2>
+        <span class="pscore"></span>
+      </div>
+      <span class="vs"><h2>vs</h2></span>
+      <div>
+        <h2>Computer</h2>
+        <span class="cscore"></span>
+      </div>
+    </div>
+    <div class="flex-container2">
+      <div class="flex-item">
+        <img
+          onclick="playRound('rock', computerSelection())"
+          src="./images/rock.png"
+          alt="rock image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          onclick="playRound('paper', computerSelection())"
+          src="./images/paper.png"
+          alt="paper image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          onclick="playRound('scissor', computerSelection())"
+          src="./images/scissor.png"
+          alt="scissor image"
+        />
+      </div>
+    </div>
+    <div class="result"></div>
     <script src="script.js"></script>
-</body>
+    <!-- can use defer -->
+  </body>
 </html>

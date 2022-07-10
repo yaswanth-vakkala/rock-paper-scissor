@@ -1,0 +1,29 @@
+img{
+    cursor: pointer;
+}
+
+.flex-container1{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: larger;
+    margin: 70px auto 40px auto;
+    height: 200px
+}
+
+.flex-container1 div{
+    text-align: center;
+}
+
+.flex-container2{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+}
+
+.result{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
